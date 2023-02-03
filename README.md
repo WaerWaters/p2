@@ -1,3 +1,11 @@
 # P2
 
-Hej Folkens!
+## Rapport Struktur ##
+
+* Indledning
+* Data-Analyse
+* Problemanalyse
+* Problemformulering
+* Genering af tal
+* Brud af Statiske antagelser
+* Konklusion
