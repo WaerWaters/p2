@@ -6,6 +6,6 @@
 * Data-Analyse
 * Problemanalyse
 * Problemformulering
-* Genering af tal
+* Genering af Pseudo-Random Tal
 * Brud af Statiske antagelser
 * Konklusion
