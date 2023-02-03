@@ -1,0 +1,17 @@
+---
+title: "Rmarkdown intro"
+author: "The ASTA Team"
+output:
+  html_document:
+    fig_height: 3
+    fig_width: 5
+    theme: cerulean
+    highlight: tango
+  pdf_document:
+    fig_height: 3
+    fig_width: 5
+---
+
+```{r}
+runif(100, min = 0, max = 100000)
+```
