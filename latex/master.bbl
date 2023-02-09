@@ -1,0 +1,83 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global}
+  \entry{Madsen2010}{booklet}{}
+    \name{author}{1}{}{%
+      {{hash=ML}{%
+         family={Madsen},
+         familyi={M\bibinitperiod},
+         given={Lars},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ML1}
+    \strng{fullhash}{ML1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{howpublished}{\url{http://www.imf.au.dk/system/latex/bog/}}
+    \field{title}{Introduktion til {LaTeX}}
+    \field{year}{2010}
+  \endentry
+
+  \entry{Mittelbach2005}{book}{}
+    \name{author}{1}{}{%
+      {{hash=MF}{%
+         family={Mittelbach},
+         familyi={M\bibinitperiod},
+         given={Frank},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Addison-Wesley}%
+    }
+    \strng{namehash}{MF1}
+    \strng{fullhash}{MF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{edition}{2. ed.}
+    \field{title}{The LATEX companion}
+    \field{year}{2005}
+  \endentry
+
+  \entry{Oetiker2010}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=OT}{%
+         family={Oetiker},
+         familyi={O\bibinitperiod},
+         given={Tobias},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{OT1}
+    \strng{fullhash}{OT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{howpublished}{\url{http://tobi.oetiker.ch/lshort/lshort.pdf}}
+    \field{title}{The Not So Short A Introduction to {LaTeX2e}}
+    \field{year}{2010}
+  \endentry
+\enddatalist
+\endinput
