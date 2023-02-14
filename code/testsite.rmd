@@ -1,0 +1,25 @@
+linear congruential generator
+```{R}
+    LCG = function(seed, loops){
+        # modulus
+        m = 7829
+        # multiplier
+        a = 378
+        # increment
+        c = 2310
+        # list
+        l1 = list(seed)
+        for(i in 1:loops){
+            l1 = append(l1,(l1[[i]]*a+c) %% m)
+        }
+        return(l1)
+    }
+    LCG(20,3)
+```
+
+
+
+
+```{R}
+
+```
