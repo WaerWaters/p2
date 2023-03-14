@@ -1,0 +1,46 @@
+\chapter{Problemanalyse}\label{ch:teori}
+\section{Teori: Statistik}
+Statistik er en videnskabelig metode, der systematisk og empirisk beskriver data ved hjælp af forskellige matematiske operationer og metoder. En grundig statistisk analyse kræver indsamling og organisering af data, efterfulgt af analyse ved hjælp af forskellige metoder og statistiske tests for at udvælge information. Typen af data varierer alt efter, hvad der undersøges, og kan derfor omfatte numeriske data såvel som kvalitative data, der skal systematiseres, før de kan analyseres statistisk. 
+I dette kommende afsnit vil der blive introduceret forskellige statistiske begreber, såsom stikprøve og middelværdi, for at danne en overordnet forståelse af teorien. Dette er vigtigt for at kunne udføre diverse statistiske tests senere hen. Derfor vil teorien og metoden blive undersøgt i det kommende afsnit.
+
+\subsection{Population og stikprøve}
+I statistisk sammenhæng forstås "population" som en gruppe af enheder eller individer,som skal undersøges og udvindes information fra. Enhver gruppe af ting, der skal undersøges statistisk, kaldes en population. Nogle eksempler på populationer, der kan undersøges, er mænd født efter 1990, Startups i Danmark eller generelt en gruppe af enheder med lignende karakteristika.
+En “stikprøve” er en tilfældigt udvalgt prøve, der udtages fra en større population. Stikprøven bør have en statistisk signifikant størrelse i forhold til den samlede population, så den kan give et mere eller mindre pålideligt indtryk af hele mængdens egenskaber. Stikprøver bruges ofte, fordi det enten ikke er muligt eller er for krævende at undersøge hele populationen. Et eksempel på en stikprøve er en meningsmåling af befolkningen, hvor der undersøges en mindre del af populationen, og observationerne tilskrives populationen som helhed.
+Når man estimerer observationer fra en stikprøve til en samlet population, vil der altid være en vis grad af statistisk usikkerhed. Dog kan man reducere usikkerheden ved at tage højde for faktorer som stikprøvens repræsentativitet for den samlede population, muligt bias i stikprøven, som kan påvirke og gøre resultaterne mindre generaliserbare, og størrelsen på ens stikprøve, hvor større stikprøver er mere repræsentative for den samlede population.
+\\
+\\
+En vigtig del af statistik er at drage konklusioner om parametre i populationen, såsom middelværdi $\mu$ og standardafvigelse $\sigma$ eller tilsvarende for stikprøver: stikprøvemiddelværdi $\bar{x}$ og stikprøvestandardafvigelse $s$. Dette gøres ved at bruge formler for beregning af middelværdi, varians og standardafvigelse, som er forskellige alt efter, om man har en population eller en stikprøve.
+\subsection{Middelværdi}
+For populationer beregnes middelværdien  ved at tage summen af alle observationerne og dividere det med antallet af observationer i populationen.
+\[\mu = \frac{1}{n} \sum_{i=1}^{n} x_i\]
+Hvor $n$ er antallet af observationer og $x_i$ er den $i$`te observation i populationen.
+\\
+\\
+For stikprøven beregnes middelværdien på sammen måde dog ud fra antallet af observationer i stikprøven:
+\[\bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i\]
+Hvor $n$ er antallet af observationer og $x_i$ er den $i$`te observation i stikprøven.
+
+\subsection{Varians}
+Variansen for populationer beregnes ved at tage summen af kvadratet af forskellen mellem hver observation og middelværdien og derefter dividere det med antallet af observationer i populationen:
+\[\sigma = \frac{1}{n}\sum_{i=1}^{n}(x_i-\mu)^2\]
+\\
+Hvor $x_i$ er den $i$'te observation i populationen, $n$ er antallet af observationer i populationen og $\mu$ er middelværdien af populationen.
+\\
+\\
+Igen beregnes variansen for stikprøven på samme måde som populationen dog benyttes antallet af observationer i stikprøven:
+\[\sigma^2 = \frac{1}{n}\sum_{i=1}^{n}(x_i-\mu)^2\]
+Hvor $x_i$ er den $i$'te observation i populationen, $n$ er antallet af observationer i stikprøven, $\bar{x}$ er stikprøvens middelværdi og $s^2$ er stikprøvens varians.
+
+\subsection{Standardafvigelse}
+Standardafvigelse er et mål for spredningen af data i en population eller stikprøve. Det er defineret som kvadratroden af variansen. Formlen for standardafvigelse i en population er:
+\[\sigma = \sqrt{\sigma^2}\]
+Hvor $\sigma$ er standardafvigelsen og $\sigma^2$ er variansen i populationen.
+\\
+\\
+I en stikprøve beregnes standardafvigelsen på samme måde, men variansen er beregnet ud fra stikprøven i stedet for hele populationen. Formlen for standardafvigelse i en stikprøve er:
+\[s = \sqrt{\sigma^2}\]
+Hvor $s$ er standardafvigelsen og $s^2$ er variansen i stikprøven.
+
+
+\section{Teori: PRNG}
+\subsection{LCG}

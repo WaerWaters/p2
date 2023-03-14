@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.7)  9 FEB 2023 13:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.7)  14 MAR 2023 11:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/danie/coding/p2/latex/master.tex
-(c:/Users/danie/coding/p2/latex/master.tex
+**c:/Users/danie/p2/latex/master.tex
+(c:/Users/danie/p2/latex/master.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-02> (setup/preamble.tex (C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
 Document Class: report 2022/07/02 v1.4n Standard LaTeX document class
@@ -519,7 +519,16 @@ Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \f@nch@O@erf=\skip73
 \f@nch@O@olf=\skip74
 \f@nch@O@orf=\skip75
-) (C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+)
+
+Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless.
+(fancyhdr)                Please consider using the `twoside' option on input line 100.
+
+
+Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless.
+(fancyhdr)                Please consider using the `twoside' option on input line 102.
+
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count307
 \calc@Bcount=\count308
@@ -972,7 +981,7 @@ Package caption Info: End \AtBeginDocument code.
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
+* modes: 
 * h-part:(L,W,R)=(79.66771pt, 401.18387pt, 116.6563pt)
 * v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
 * \paperwidth=597.50787pt
@@ -980,13 +989,13 @@ Package caption Info: End \AtBeginDocument code.
 * \textwidth=401.18387pt
 * \textheight=591.5302pt
 * \oddsidemargin=7.39772pt
-* \evensidemargin=44.3863pt
+* \evensidemargin=7.39772pt
 * \topmargin=-7.86334pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=11.0pt
 * \footskip=30.0pt
-* \marginparwidth=103.0pt
+* \marginparwidth=50.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
 * \skip\footins=10.0pt plus 4.0pt minus 2.0pt
@@ -994,8 +1003,8 @@ Package caption Info: End \AtBeginDocument code.
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
+* \@twosidefalse
+* \@mparswitchfalse
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
@@ -1025,8 +1034,12 @@ Package biblatex Info: Reference segment=0 on input line 5.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 5.
+
+
+Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 5.
+
 Package hyperref Info: Link coloring OFF on input line 5.
- (master.out) (master.out)
+(master.out) (master.out)
 \@outlinefile=\write5
 \openout5 = `master.out'.
 
@@ -1063,12 +1076,12 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 8.33606pt on input line 41.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 6.25204pt on input line 41.
-<AAUgraphics/aau_logo_circle_en.pdf, id=54, 77.28876pt x 77.28876pt>
+<AAUgraphics/aau_logo_circle_en.pdf, id=86, 77.28876pt x 77.28876pt>
 File: AAUgraphics/aau_logo_circle_en.pdf Graphic file (type pdf)
 <use AAUgraphics/aau_logo_circle_en.pdf>
 Package pdftex.def Info: AAUgraphics/aau_logo_circle_en.pdf  used on input line 44.
 (pdftex.def)             Requested size: 119.49974pt x 119.51091pt.
-<AAUgraphics/aau_waves.pdf, id=55, 598.235pt x 845.1575pt>
+<AAUgraphics/aau_waves.pdf, id=87, 598.235pt x 845.1575pt>
 File: AAUgraphics/aau_waves.pdf Graphic file (type pdf)
 <use AAUgraphics/aau_waves.pdf>
 Package pdftex.def Info: AAUgraphics/aau_waves.pdf  used on input line 47.
@@ -1079,12 +1092,17 @@ Package pdftex.def Info: AAUgraphics/aau_waves.pdf  used on input line 47.
 LaTeX Font Info:    Trying to load font information for TS1+pplx on input line 4.
  (C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1pplx.fd
 File: ts1pplx.fd 2004/09/06 font definitions for TS1/pplx.
-) [2
+)
+pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.8 \clearpage
+               [1
 
 ]) (sections/titlepages.tex
 \titlepageleftcolumnwidth=\skip102
 \titlepagerightcolumnwidth=\skip103
-<AAUgraphics/aau_logo_da.pdf, id=77, 121.45375pt x 77.28876pt>
+<AAUgraphics/aau_logo_da.pdf, id=108, 121.45375pt x 77.28876pt>
 File: AAUgraphics/aau_logo_da.pdf Graphic file (type pdf)
 <use AAUgraphics/aau_logo_da.pdf>
 Package pdftex.def Info: AAUgraphics/aau_logo_da.pdf  used on input line 34.
@@ -1102,30 +1120,26 @@ Overfull \hbox (3.18648pt too wide) in paragraph at lines 34--34
 [] 
  []
 
-[3
+[2
 
- <./AAUgraphics/aau_logo_da.pdf>]) [4
-
-
-
-] (master.toc)
+ <./AAUgraphics/aau_logo_da.pdf>]) (master.toc)
 \tf@toc=\write6
 \openout6 = `master.toc'.
 
- [5
+ [3
 
 
-] [6
+
 
 
 ] (master.tdo)
 \tf@tdo=\write7
 \openout7 = `master.tdo'.
 
- (sections/preface.tex [7] [8
+ (sections/preface.tex [4
 
 
-]) [9] [10
+]) [5
 
 
 ] (sections/introduction.tex
@@ -1143,7 +1157,9 @@ Package hyperref Info: bookmark level for unknown todo defaults to 0 on input li
 [1
 
 
-]) (sections/ch2name.tex
+
+
+]) (sections/teori.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1153,23 +1169,68 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [2]
 Chapter 2.
-) (sections/conclusion.tex [3
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--13
+
+ []
 
 
-] [4
+Overfull \hbox (27.74864pt too wide) in paragraph at lines 7--13
+\T1/pplx/m/n/10.95 som mid-delværdi $\OML/zplm/m/it/10.95 ^^V$ \T1/pplx/m/n/10.95 og stan-dard-afvigelse $\OML/zplm/m/it/10.95 ^^[$ \T1/pplx/m/n/10.95 eller tilsvarende for stikprøver: stikprøvemid-
+ []
+
+[3
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 15--20
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--31
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 36--41
+
+ []
+
+) (sections/ch2name.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[5]
 Chapter 3.
-) [5] [6
+) (sections/conclusion.tex [6
 
 
-] (sections/appAname.tex [7] [8
+]
+Chapter 4.
+) [7
+
+
+] (sections/appAname.tex [8
 
 
 ]
 Appendix A.
-) [9]
+) [9
+
+
+]
 \tf@thm=\write8
 \openout8 = `master.thm'.
 
@@ -1177,23 +1238,23 @@ Appendix A.
 AED: lastpage setting LastPage
 (master.aux)
 Package rerunfilecheck Info: File `master.out' has not changed.
-(rerunfilecheck)             Checksum: 2C8928B7BB161E533537EFD6F6AFBA99;1698.
+(rerunfilecheck)             Checksum: AEB81880FB4864F6B4F783AA1D581930;2914.
 Package logreq Info: Writing requests to 'master.run.xml'.
 \openout1 = `master.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32950 strings out of 476374
- 628804 string characters out of 5788855
- 1858340 words of memory out of 5000000
- 52685 multiletter control sequences out of 15000+600000
- 559143 words of font info for 103 fonts, out of 8000000 for 9000
+ 32967 strings out of 476374
+ 628847 string characters out of 5788855
+ 1862340 words of memory out of 5000000
+ 52688 multiletter control sequences out of 15000+600000
+ 561898 words of font info for 112 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
- 104i,14n,97p,1982b,2485s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\danie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk>{C:/Users/danie/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <C:\Users\danie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1000.pk> <C:\Users\danie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1000.pk><C:/Users/danie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/danie/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/danie/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/danie/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/danie/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on master.pdf (19 pages, 328906 bytes).
+ 104i,14n,97p,1975b,2485s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\danie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk>{C:/Users/danie/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <C:\Users\danie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1000.pk> <C:\Users\danie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1000.pk><C:/Users/danie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/danie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/danie/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmr.pfb><C:/Users/danie/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/danie/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/danie/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/danie/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on master.pdf (15 pages, 354990 bytes).
 PDF statistics:
- 302 PDF objects out of 1000 (max. 8388607)
- 45 named destinations out of 1000 (max. 500000)
- 124 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 334 PDF objects out of 1000 (max. 8388607)
+ 48 named destinations out of 1000 (max. 500000)
+ 188 words of extra memory for PDF output out of 10000 (max. 10000000)
 
