@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex master"] 1678790277 "master.aux" "master.bbl" "master" 1678790285 0
+["bibtex master"] 1678962778 "master.aux" "master.bbl" "master" 1678963170 0
   "./bib/mybib.bib" 1678786424 542 c435c7308db5b8eb63361c48ccf323aa ""
-  "./master-blx.bib" 1678790284 340 25674e554aa25e98ea59ec40797d70f1 ""
+  "./master-blx.bib" 1678963169 340 25674e554aa25e98ea59ec40797d70f1 ""
   "C:/Users/danie/AppData/Local/Programs/MiKTeX/bibtex/bst/biblatex/biblatex.bst" 1657613115 65483 3b5a53ada692a06ce416d088de6a391b ""
-  "master.aux" 1678790284 6508 a76531eb075f1af3675be1e4b24b78c8 "pdflatex"
+  "master.aux" 1678963169 6558 ae5ab830f4bd3f1a5c7f01d7da1670e4 "pdflatex"
   (generated)
   "master.bbl"
   "master.blg"
   (rewritten before read)
-["pdflatex"] 1678790281 "c:/Users/danie/p2/latex/master.tex" "master.pdf" "master" 1678790285 0
+["pdflatex"] 1678963167 "c:/Users/danie/p2/latex/master.tex" "master.pdf" "master" 1678963170 0
   "AAUgraphics/aau_logo_circle_en.pdf" 1678786424 10608 b38ea48f0e7a35822b777cd6a49cc5df ""
   "AAUgraphics/aau_logo_da.pdf" 1678786424 10131 980b93b937fd7f203bba8fd1325ad990 ""
   "AAUgraphics/aau_waves.pdf" 1678786424 182764 d1be29102046c2ed127e4699c8d7458f ""
@@ -236,12 +236,12 @@
   "C:/Users/danie/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
   "C:/Users/danie/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "c:/Users/danie/p2/latex/master.tex" 1678786583 1270 3681fe6d2dfbfaa3859ae233d7e8928e ""
-  "master.aux" 1678790284 6508 a76531eb075f1af3675be1e4b24b78c8 "pdflatex"
-  "master.bbl" 1678790277 2249 13875c9ba77fd49b2eea6ab45cc9a5cd "bibtex master"
-  "master.out" 1678790284 2914 aeb81880fb4864f6b4f783aa1d581930 "pdflatex"
-  "master.run.xml" 1678790284 2606 2bde4099c2e2890235e258b3254a5acd "pdflatex"
-  "master.tdo" 1678790284 480 d1a5900500743e733ed3744e047d6b66 "pdflatex"
-  "master.toc" 1678790284 1570 4eb3ef53a7bd03106edb5978c7a081a9 "pdflatex"
+  "master.aux" 1678963169 6558 ae5ab830f4bd3f1a5c7f01d7da1670e4 "pdflatex"
+  "master.bbl" 1678962778 2249 13875c9ba77fd49b2eea6ab45cc9a5cd "bibtex master"
+  "master.out" 1678963169 2914 aeb81880fb4864f6b4f783aa1d581930 "pdflatex"
+  "master.run.xml" 1678963169 2606 2bde4099c2e2890235e258b3254a5acd "pdflatex"
+  "master.tdo" 1678963169 480 2a3c9b5ab1854bc1f26babc7a6b8a05c "pdflatex"
+  "master.toc" 1678963169 1571 7edb19e2198f7909d77324d666c8eb9f "pdflatex"
   "sections/appAname.tex" 1678786424 75 ec8650ebbc4631bc0fdd8b10dc07cc5b ""
   "sections/ch2name.tex" 1678786424 275 049863d17d8211abd2e45dcf2b9ac2cd ""
   "sections/colophon.tex" 1678786424 460 ac15c6b12c5757cf8af7710f3a92ad15 ""
@@ -249,7 +249,7 @@
   "sections/frontpage.tex" 1678786424 1602 94ef0bc52f695b33a513b24bbc3812bb ""
   "sections/introduction.tex" 1678786424 1095 4bffc25c32e919b03c034ff5b38667b0 ""
   "sections/preface.tex" 1678786424 770 9d2109953ace608801e2a558b184d77a ""
-  "sections/teori.tex" 1678790271 4783 e9fd46629ee454f1649d6d4635061019 ""
+  "sections/teori.tex" 1678963166 7175 85834fcc918db8c4d4eb5e4634b8c264 ""
   "sections/titlepages.tex" 1678786424 800 b98f542fc81abbf5d3235cdf7407a4ac ""
   "setup/hyphenations.tex" 1678786424 189 c65e159892576ffa059905d8d1469c43 ""
   "setup/macros.tex" 1678786424 3213 17034c9d409039cec82a64a643676d97 ""

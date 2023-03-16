@@ -43,4 +43,18 @@ Hvor $s$ er standardafvigelsen og $s^2$ er variansen i stikprøven.
 
 
 \section{Teori: PRNG}
+Tilfældighed refererer til egenskaberne ved et system eller en proces, der mangler forudsigelighed eller orden, og producerer resultater, der ikke kan forudsiges med sikkerhed. Tilfældighed er afgørende i mange felter, såsom statistik, kryptografi og spil, hvor det bruges til at sikre lighed, sikkerhed og forudsigelighed.
+\\
+Tilfældige tal er tal, der genereres uden nogen forudsigelig mønster og følger en sandsynlighedsfordeling. De anvendes ofte i computersimuleringer, kryptografi og statistisk analyse. Tilfældige tal kan genereres ved hjælp af forskellige teknikker, såsom fysiske processer som radioaktivt henfald, atmosfærisk støj eller matematiske algoritmer, der simulerer tilfældighed.
+\\
+\\
+Pseudo Random Number Generator (PRNG) er metoder som bliver brugt til at skabe tilfældige tal. En computer vil altid være deterministisk og vil derfor aldrig kunne generere tilfældige tal. Dertil kan der bruges PRNG, hvor der er udarbejdet forskellige metoder, hvorpå man kan genere tal, der så vidt muligt kan give tal, som ligner de er tilfældige. Dette ændrer ikke på at tallene, som algoritmen ender med at producere, ikke er deterministiske, algoritmen får det til at ligne at de er tilfældige, derfor pseudo. 
+\newpage
 \subsection{LCG}
+Der vil i projektet bruges metoden Linear Congruential Generator (LCG), som er en af mange metoder til at skabe pseudo tilfældige tal på. 
+\\
+\[X_i+1 = (aX_i+c)\mod m\]
+Metoden består af en startværdi, $X_0$, som overholder $0 \le X_0 \le m$. Dernæst bliver $a$, også kaldet multiplikatoren, gange på $X_i$ ledet, hvorefter der bliver adderet en konstant $c$. Dette bliver sat modulus $m$, hvor resultat af det tidligere led, bliver divideret med $m$, hvilket giver vores tilfældige tal, samt en ny multiplikator. Derudover, skal m overholde $0 \le m$, $a$ skal $0 \le a \le m$ og $c$ overholde $0 \le c \le m$
+\\
+\\
+Som der blev skrevet tidligere er det stadig deterministiske tal som den genererer. Da den skaber tal på baggrund af ovenstående formel. Det vil resultere i at tallene på et tidspunkt vil gengive sig selv. Længden fra det første tal bliver gengivet og bliver kaldt perioden, da det er perioden mellem det første originale talt bliver gengivet. Måden hvorpå man kan ændre hvor stor perioden er, gør man ved at ændre på variablerne a, c og m, ved at ændre på dem ændrer man perioden. 
