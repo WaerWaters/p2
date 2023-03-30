@@ -7,39 +7,113 @@ I dette kommende afsnit vil der blive introduceret forskellige statistiske begre
 I statistisk sammenhæng forstås "population" som en gruppe af enheder eller individer,som skal undersøges og udvindes information fra. Enhver gruppe af ting, der skal undersøges statistisk, kaldes en population. Nogle eksempler på populationer, der kan undersøges, er mænd født efter 1990, Startups i Danmark eller generelt en gruppe af enheder med lignende karakteristika.
 En “stikprøve” er en tilfældigt udvalgt prøve, der udtages fra en større population. Stikprøven bør have en statistisk signifikant størrelse i forhold til den samlede population, så den kan give et mere eller mindre pålideligt indtryk af hele mængdens egenskaber. Stikprøver bruges ofte, fordi det enten ikke er muligt eller er for krævende at undersøge hele populationen. Et eksempel på en stikprøve er en meningsmåling af befolkningen, hvor der undersøges en mindre del af populationen, og observationerne tilskrives populationen som helhed.
 Når man estimerer observationer fra en stikprøve til en samlet population, vil der altid være en vis grad af statistisk usikkerhed. Dog kan man reducere usikkerheden ved at tage højde for faktorer som stikprøvens repræsentativitet for den samlede population, muligt bias i stikprøven, som kan påvirke og gøre resultaterne mindre generaliserbare, og størrelsen på ens stikprøve, hvor større stikprøver er mere repræsentative for den samlede population.
-\\
-\\
-En vigtig del af statistik er at drage konklusioner om parametre i populationen, såsom middelværdi $\mu$ og standardafvigelse $\sigma$ eller tilsvarende for stikprøver: stikprøvemiddelværdi $\bar{x}$ og stikprøvestandardafvigelse $s$. Dette gøres ved at bruge formler for beregning af middelværdi, varians og standardafvigelse, som er forskellige alt efter, om man har en population eller en stikprøve.
+
 \subsection{Middelværdi}
-For populationer beregnes middelværdien  ved at tage summen af alle observationerne og dividere det med antallet af observationer i populationen.
-\[\mu = \frac{1}{n} \sum_{i=1}^{n} x_i\]
-Hvor $n$ er antallet af observationer og $x_i$ er den $i$`te observation i populationen.
-\\
-\\
-For stikprøven beregnes middelværdien på sammen måde dog ud fra antallet af observationer i stikprøven:
-\[\bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i\]
-Hvor $n$ er antallet af observationer og $x_i$ er den $i$`te observation i stikprøven.
+For populationer ($\mu$) og stikprøver($\bar{x}$) beregnes middelværdien  ved at tage summen af alle observationerne og dividere det med antallet af observationer.
+\[\bar{x} , \mu = \frac{1}{n} \sum_{i=1}^{n} x_i\]
+Hvor $n$ er antallet af observationer og $x_i$ er den $i$`te observation i populationen eller stikprøve. 
 
 \subsection{Varians}
-Variansen for populationer beregnes ved at tage summen af kvadratet af forskellen mellem hver observation og middelværdien og derefter dividere det med antallet af observationer i populationen:
-\[\sigma = \frac{1}{n}\sum_{i=1}^{n}(x_i-\mu)^2\]
+Variansen for populationer beregnes ved at summere den kavadreret forskel af hver observation og middelværdien og derefter divideres med antallet af observationer fra populationen:
+
+\[\sigma = \sum_{i=1}^{n}\frac{(x_i-\mu)^2}{n}\]
+
+\noindent Hvor $x_i$ er den $i$'te observation, $n$ er antallet af observationer og $\mu$ er middelværdien af populationen.
 \\
-Hvor $x_i$ er den $i$'te observation i populationen, $n$ er antallet af observationer i populationen og $\mu$ er middelværdien af populationen.
-\\
-\\
-Igen beregnes variansen for stikprøven på samme måde som populationen dog benyttes antallet af observationer i stikprøven:
-\[\sigma^2 = \frac{1}{n}\sum_{i=1}^{n}(x_i-\mu)^2\]
-Hvor $x_i$ er den $i$'te observation i populationen, $n$ er antallet af observationer i stikprøven, $\bar{x}$ er stikprøvens middelværdi og $s^2$ er stikprøvens varians.
+
+\noindent Variansen for stikprøven berenges på tilsvarende måde som populationen, dog benyttes antallet af observationer fra stikprøven:
+\[s^2 = \sum_{i=1}^{n}\frac{(x_i-\bar{x})^2}{n-1}\]
+Hvor $x_i$ er den $i$'te observation af stikprøven, $n$ er antallet af observationer i stikprøven, $\bar{x}$ er stikprøvens middelværdi.
 
 \subsection{Standardafvigelse}
 Standardafvigelse er et mål for spredningen af data i en population eller stikprøve. Det er defineret som kvadratroden af variansen. Formlen for standardafvigelse i en population er:
 \[\sigma = \sqrt{\sigma^2}\]
-Hvor $\sigma$ er standardafvigelsen og $\sigma^2$ er variansen i populationen.
-\\
+\noindent Hvor $\sigma$ er standardafvigelsen og $\sigma^2$ er variansen i populationen.
 \\
 I en stikprøve beregnes standardafvigelsen på samme måde, men variansen er beregnet ud fra stikprøven i stedet for hele populationen. Formlen for standardafvigelse i en stikprøve er:
 \[s = \sqrt{\sigma^2}\]
 Hvor $s$ er standardafvigelsen og $s^2$ er variansen i stikprøven.
+
+\subsection{Fordelingsteori}
+\subsubsection{Normalfordeling}
+Normalfordelingen er en statistisk fordeling, som har en symmetrisk fordeling med en klokkeformet kurve. Den beskrives af følgende formel:
+\[n(x;\mu,\sigma) = \frac{1}{\sqrt{2\pi\sigma}}{e}^{\frac{1}{2\sigma^2}(x-\mu)^2} , -\infty < x < \infty \]
+Hvor $\mu$ angiver midterpunktet og $\sigma$ angiver spredningen, som er to kendte værdier.
+\\
+Som vist på figuren, er $68\%$, $95\%$ og $99\%$ af observationerne henholdsvis indenfor $\sigma \pm$, $\pm 2\sigma$ og $\pm 3 \sigma$ fra middelværdien $\mu$. Z-scoren er et statistisk mål, som angiver, hvor mange standardafvigelser en observation ligger fra middelværdien. Dette beregnes ved at benytte følgende formel:
+\\
+\[Z = \frac{X-\mu}{\sigma}\]
+Værdierne i Z-scoren kan bruges i en standard normalfordeling, hvor $\mu = 0$ og standardafvigelsen er $\sigma = 1.$ En positiv Z-score angiver, at observationen er over middelværdien, mens en negativ Z-score angiver, at observationen er under middelværdien i forhold til standardafvigelsen.
+
+\subsubsection{Uniformfordeling}
+Uniformfordeling er en statistisk fordeling, hvor alle værdier har samme sandsynlighed for at optræde. En uniform fordeling kan repræsenteres grafisk som en lige linje, der går fra den ene ende af intervallet $[A, B]$ til den anden, hvor højden er $1/(B-A)$.
+\\
+En uniform fordeling har følgende formel:
+
+\begin{equation}\label{Uniformfordelingmat}
+    f(x;A,B) =
+    \begin{cases}
+        \frac{1}{B-A} & A \le x \le B, \\
+        0  &\text{ellers}
+    \end{cases}
+\end{equation}
+
+\noindent Her er $f(x)$ sandsynligheden for, at en tilfældig variabel $x$ har en værdi i intervallet $[A, B]$. 
+For at kunne arbejde med uniform fordeling er det nyttigt at have kendskab til hvordan middelværdi og spredning beregnes.
+Middelværdien for en uniform fordeling er gennemsnittet af de to endepunkter i intervallet og kan beregnes ved hjælp af følgende formel:
+
+\[\mu = \frac{A+B}{2}\] 
+
+
+\noindent Når det kommer til spredningen for en uniform fordeling kan den findes ved at bruge følgende formel:
+
+\[\sigma^2 = \frac{(B-A)^2}{12}\]
+
+\subsubsection{Skævfordeling}
+Skævfordeling er en statistisk fordeling, hvor dataene er skævt fordelt i forhold til middelværdien. Dette betyder, at der er flere observationer i den ene ende af fordelingen end i den anden.
+Dette koncept kan forstås som enten højreskæv eller venstreskæv. En højreskæv fordeling betyder, at den mest hyppige værdi forekommer på venstre side af middelværdien, mens halen strækker sig mod højre. Dette betyder, at der vil være flere ekstreme værdier på den høje side af fordelingen, og middelværdien vil være større end medianen. For venstreskæve fordelinger gælder det modsatte.
+
+\subsubsection{Poissonfordeling}
+Poissonfordelingen er en statistisk fordeling, der beskriver sandsynligheden for, at en bestemt begivenhed indtræffer et bestemt antal gange inden for en given tidsperiode eller i et givet område. Fordelingen antager, at hændelserne opstår uafhængigt af hinanden, og at sandsynligheden for, at en hændelse opstår, er den samme i hele tidsintervallet. Poissonfordelingen har den egenskab, at middelværdien og variansen er lig med $\lambda$.
+Poissonfordelingen er givet ved: 
+\[p(x; \lambda t) = \frac{(e^{-\lambda t} \lambda t^x)}{x!}, x = 0,1,2,...,\]
+
+\noindent Her er $x$  er forekommer inden for et givent tidsinterval, $\lambda$ er forventingen om antallet af forekomster i det samme tidsinterval, og $x!$ er det faktiske antal hændelser af $x$.
+
+\subsubsection{Store tals lov}
+Store tals lov bruges til at forstå og analysere de forskellige typer af fordelinger som nævnt ovenover; normalfordeling, uniform fordeling skæv fordeling og poissonfordeling. Det grundlæggende princip er, at gennemsnittet af et stort antal uafhængige fordelte stokastiske variable vil konvergere mod den teoretiske forventede værdi. Hvilket kan bruges til at estimere populationens middelværdi ud fra et stort prøveudtræk.
+
+\subsubsection{CLT}
+CLT(Central Limit Theorom) er en sætning som lyder på, hvis der bliver taget en tilfældig stikprøve $n$, fra en en population, vil middelværdierne ligne en normal fordeling. Så jo større $n$ der er jo mere vil den ligne normalfordelingen. Generelt set er det også kendt at over $30$ så vil den ligne en normal fordeling. Jo større stikprøven bliver en $30$ gør ikke den store forskel i forhold til at ligne normalfordelingen,  men man kan være mere præcist med det den fortæller noget om.
+I CLT siger også at det er ligemeget hvordan populationen fordeler sig, så vil den stadig efterligne en normalfordeling.    
+
+\subsubsection{CDF OG PMF}
+Cumulative Distribution Function (CDF), er i statistik, når man tager sandsynligheden af, at et givet $x$ vil være $\leq x$. For eksempel, hvis man kaster en terning, er der $\frac{1}{6}$ chance for at man vil lande på $1$, så der er $16.667\%$ chance for at du slår et. Der er også $16.667\%$ chance for at slå $2$, men med CDF siger den, at det er den kumulative værdi, så chancen for at du slår $2$ eller derunder, hvilket giver en CDF-værdi på $33.33\%$ chance for at slå det.
+Probability Mass Function (PMF) minder om CDF, men den siger i stedet for, at det skal være det samme eller mindre end $x$, så skal det være præcis $x$. Den fokuserer på en specifik værdi, så i stedet for, når man slår $2$, vil chancen være det samme som for at slå, altså $16.667\%$. Den fungerer ikke kumulativ.
+
+\subsection{Estimationsteori}
+\subsubsection{Statisk inferens}
+Statistisk inferens anvendes til at drage konklusioner om en populations parametre baseret på en stikprøve taget fra populationen. Inden for begrebet "estimering" benyttes disse stikprøver til at lave to typer estimater, nemlig "punktestimat" og "intervalestimat".
+Et punktestimat anvendes til at estimere en ukendt parameter ud fra en population, for eksempel middelværdien. Et intervalestimat anvendes til at estimere de sande værdi-intervaller for middelværdien for en population.
+Projektet omfatter konfidensintervaller, da det giver en sandsynligheds værdi af, om det estimerede interval dækker den sande populationsparameter.
+
+\subsubsection{Konfidensinterval}
+Når der estimerer en populationsparameter i statistik ved brug af et punktestimat, er der altid en vis grad af usikkerhed. Denne usikkerhed repræsenterer mængden af variation, der er associeret med vores stikprøve, også kaldet fejlmargin. Derfor er det vigtigt at arbejde med en formel, der tager højde for denne fejlmargin, hvilket konfidensintervaller gør.
+Et konfidensinterval giver en sandsynlighed for, at intervalestimat har fanget den populationsparameter, der søges. Det tal kaldes dækningsgraden, og er typisk valgt til at være tættest på $1$, eksempelvis enten $0.95$ eller $0.99$. Der er en risiko baseret på det valgte dækningsgrad. Dette kaldes signifikansniveauet $\alpha$ og beskriver risikoen for ikke at ramme populationsmiddelværdien med det valgte estimering.
+Når man skal skabe et konfidensinterval for populationsmiddelværdien, er der to mulige formler.
+\\
+\\
+Hvis populationsvariansen er kendt og normalfordelt, skal man bruge følgende formel:
+\\
+\[\bar{x} \pm z_{\alpha/2}\frac{\sigma}{\sqrt{n}}\]
+Hvor $\bar{x}$ repræsentere punktestimatet og $z_{\alpha/2}\frac{\sigma}{\sqrt{n}}$ repræsentere fejlmargin.
+\\
+\\
+Hvis populationsvariansen er ukendt og har en t-fordeling, skal man bruge følgende formel:
+\\
+\[\bar{x} \pm t_{\alpha/2}\frac{s}{\sqrt{n}}\]
+Hvor $\bar{x}$ repræsenterer punktestimatet, $t_{\alpha/2}$ repræsenterer t-værdien og $\frac{s}{\sqrt{n}}$ repræsenterer standardafvigelsen for stikprøven.
+
 
 
 \section{Teori: PRNG}
@@ -47,14 +121,25 @@ Tilfældighed refererer til egenskaberne ved et system eller en proces, der mang
 \\
 Tilfældige tal er tal, der genereres uden nogen forudsigelig mønster og følger en sandsynlighedsfordeling. De anvendes ofte i computersimuleringer, kryptografi og statistisk analyse. Tilfældige tal kan genereres ved hjælp af forskellige teknikker, såsom fysiske processer som radioaktivt henfald, atmosfærisk støj eller matematiske algoritmer, der simulerer tilfældighed.
 \\
-\\
 Pseudo Random Number Generator (PRNG) er metoder som bliver brugt til at skabe tilfældige tal. En computer vil altid være deterministisk og vil derfor aldrig kunne generere tilfældige tal. Dertil kan der bruges PRNG, hvor der er udarbejdet forskellige metoder, hvorpå man kan genere tal, der så vidt muligt kan give tal, som ligner de er tilfældige. Dette ændrer ikke på at tallene, som algoritmen ender med at producere, ikke er deterministiske, algoritmen får det til at ligne at de er tilfældige, derfor pseudo. 
-\newpage
+
+\subsection{Fordelings Test ($\chi^2$)}
+For at kunne undersøge, hvorvidt et datasæt genereret af PRNG  er uafhængig, sammenlignes det med de forventede værdier, en uniform fordeling. \textcolor{red}{Antagelserne for en uniform fordeling er, at minimum og maksimum er forhåndsbestemt, samt at alle værdier har samme sandsynlighed for at optræde.} Ud fra antagelserne, kan der opstilles en nulhypotese ($H_0$), hvilket er en prædikeret hypotese, opstillet på baggrund af antagelserne for fordelingen. Dermed vil nulhypotesen, for at teste en PRNG model, være at der ikke er en statistisk signifikant forskel, mellem frekvensen af værdierne som PRNG har genereret og den teoretiske fordeling af tal. 
+
+\noindent Signifikansniveauet, angivet med $\alpha$, er sandsynligheden for at en nulhypotese afvises, selvom nulhypotesen er sand. Inden for statistik bruges der forskellige signifikansniveauer til at bekræfte ens nulhypotese. Signifikansniveauet vælges på forhånd og ligger ofte omkring $1-5\%$, altså $0.01-0.05$. Sammen med p-værdien, som er resultatet af testen, afgøres det, hvorvidt nulhypotesen bekræftes eller forkastes, at resultaterne er statistisk signifikante. P-værdien angiver, hvad sandsynligheden er for, at et lignende resultat forekommer, selvom nulhypotesen er sand. Siden stikprøven trækkes tilfældigt fra en population, er der altid en sandsynlighed for at den observerede situation kun opstod på grund af stikprøvefejl, siden en stikprøve muligvis ikke er repræsentativ for hele populationen. 
+For at bestemme antallet af frihedsgrader i en $\chi^2$ test skal dataene opdeles i kategorier, således at fordelingen kan sammenlignes med den forventede fordeling. Antallet af frihedsgrader er lig med antallet af kategorier minus $1$.
+
+\subsection{Spektral Test} 
+Spektral testen er en metode til at kontrollere, hvorvidt en given talrække af pseudo-tilfældige tal er stokastisk uafhængig af hinanden. Ideen bagved metoden er at tage henholdsvis i-tal, og kombinerer dem til i-tupler, som fortolkes som en vektor i i-dimensioner. På baggrund af vektorens fordeling i værdiområdet kan der konkluderes hvor godt fordelingen svarer til, hvad der teoretisk forventes af ligefordelte tilfældige værdier.
+
+\noindent Når Spektral testen bruger for at undersøge resultaterne på en PRNG som ikke generer tilstrækkelig tilfældigt tal, kan der opstår planer som tallene følger. I eksemplet nedenfor blev algoritmen RANDU testet, og resultatet viser at tallene tydeligt falder i $15$ to-dimensionelle planer. 
+
 \subsection{LCG}
 Der vil i projektet bruges metoden Linear Congruential Generator (LCG), som er en af mange metoder til at skabe pseudo tilfældige tal på. 
 \\
 \[X_i+1 = (aX_i+c)\mod m\]
-Metoden består af en startværdi, $X_0$, som overholder $0 \le X_0 \le m$. Dernæst bliver $a$, også kaldet multiplikatoren, gange på $X_i$ ledet, hvorefter der bliver adderet en konstant $c$. Dette bliver sat modulus $m$, hvor resultat af det tidligere led, bliver divideret med $m$, hvilket giver vores tilfældige tal, samt en ny multiplikator. Derudover, skal m overholde $0 \le m$, $a$ skal $0 \le a \le m$ og $c$ overholde $0 \le c \le m$
-\\
-\\
-Som der blev skrevet tidligere er det stadig deterministiske tal som den genererer. Da den skaber tal på baggrund af ovenstående formel. Det vil resultere i at tallene på et tidspunkt vil gengive sig selv. Længden fra det første tal bliver gengivet og bliver kaldt perioden, da det er perioden mellem det første originale talt bliver gengivet. Måden hvorpå man kan ændre hvor stor perioden er, gør man ved at ændre på variablerne a, c og m, ved at ændre på dem ændrer man perioden. 
+Metoden består af en startværdi, $X_0$, som overholder $0 < X_0 < m$. Dernæst bliver $a$, også kaldet multiplikatoren, gange på $X_i$ ledet, hvorefter der bliver adderet en konstant $c$. Dette bliver sat modulus $m$, hvor resultatet af det tidligere led bliver divideret med $m$, hvilket giver de tilfældige tal, samt en ny multiplikator, på baggrund af resten af divisionen. Derudover skal $m$ overholde $0 < m$, $a$ skal $0 < a < m$, og $c$ skal overholde $0 < c < m$. Når metoden LCG bliver brugt, er der chance for, at metoden går i et loop, hvorved den vil give en sekvens af pseudo-tilfældige tal efterfulgt af det samme tal. Dette kan undgås ved at udvælge værdier for $a$ og $m$, der er indbyrdes primisk, hvilket betyder, at de eneste tal, som går op i dem, er $1$ og $-1$. Når tallene bliver generet efter ovenstående formel, vil der alt efter $a$, $c$ og $m$'s værdier, opstå et tidspunkt, hvor tallene bliver gengivet. Længden fra det oprindelige tal til gengivelsen kaldes perioden.
+
+\subsection{R's Pseudo-Random Number Generator}
+En af de standard PRNG i programmeringssproget R, kaldes for Mersenne - Twister. Mersenne - Twister har en periode på $2^{19937}-1$ og en ligefordeling i $623$ dimensioner. Problemerne med LCG's lave periode og dårlige fordeling af punkterne, var en grund til at mere komplekse PRNG var nødvendig. Mersenne - Twister blev udviklet efter algoritmer som LCG ikke var tilstrækkelig tilfældige længere. For at generer tal der er højt uafhængige og uforudsigelige bruger algoritmen bit-shifting og XOR-operationer. (uddybes/tilrettes så snart der bliver lavet spektraltest for LCG). 
+
